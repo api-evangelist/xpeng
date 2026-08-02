@@ -1,8 +1,23 @@
 aid: xpeng
 name: Xpeng
-description: 'Xpeng is a company surfaced as a portfolio company of hongshan, idg-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: technology. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'XPENG (Xiaopeng Motors) is a Chinese smart electric-vehicle company headquartered
+  in Guangzhou that designs and manufactures smart EVs (G6, G7, G9, P7/P7+, X9, MONA M03) with
+  in-house advanced driver-assistance and in-car software, listed on the NYSE (XPEV) and HKEX
+  (9868). Surfaced as a portfolio company of hongshan and idg-capital. XPENG publishes no public
+  developer API: its open platform (open.xiaopeng.com) is geo-restricted and account-gated, and
+  no public API docs, specs, or SDKs were found.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://a-cdn.xpeng.com/mall/public/favicon.svg
 url: https://raw.githubusercontent.com/api-evangelist/xpeng/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Technology
+- Automotive
+- Electric Vehicles
+- Smart Mobility
+- Autonomous Driving
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +45,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://xpeng.com
+  url: https://www.xpeng.com
+- type: Blog
+  url: https://www.xpeng.com/news
+- type: Support
+  url: https://www.xpeng.com/service
+- type: Community
+  url: https://bbs.xiaopeng.com/
+- type: Login
+  url: https://login.xpeng.com/
+- type: PrivacyPolicy
+  url: https://www.xpeng.com/policy
+- type: DomainSecurity
+  url: security/xpeng-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/xpeng-vulnerability-disclosure.yml
+- type: Security
+  url: https://security.xiaopeng.com/
+- type: Packages
+  url: packages/xpeng-packages.yml
+- type: LLMsTxt
+  url: llms/xpeng-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

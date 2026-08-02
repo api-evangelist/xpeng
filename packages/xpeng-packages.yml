@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: npm / PyPI / crates.io / Packagist registry searches for "xpeng"
+notes: >-
+  XPeng publishes no first-party API client SDKs on the public package
+  registries. The only clearly first-party package found is an internal-style
+  utility published from a xiaopeng.com email (coredump tooling, not an API
+  SDK). Other npm hits ("@semi-bot/semi-theme-xpeng", "@alifd/theme-xpeng")
+  are third-party design-system themes. PyPI, crates.io, and Packagist have
+  no xpeng packages.
+packages:
+- language: javascript
+  registry: npm
+  name: coredump-messenger
+  url: https://www.npmjs.com/package/coredump-messenger
+  install: npm install coredump-messenger
+  official: true
+  role: internal-tooling
+  note: '"XPENG Coredump Messenger by SWInfra Team", published by hepq@xiaopeng.com; not a public API client SDK'
+sdk_count: 0

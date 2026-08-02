@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of /.well-known/ on XPeng hosts
+notes: >-
+  No /.well-known/ discovery documents are published on the global (xpeng.com)
+  or Chinese (xiaopeng.com) sites. www.xiaopeng.com/.well-known/security.txt
+  returns HTTP 200 but the body is a Chinese "file not found" message
+  (soft 404), so it is not recorded as a real security.txt.
+hosts:
+- host: https://www.xpeng.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://www.xiaopeng.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+    note: body is "没有对应的文件" (no such file); not a real RFC 9116 document
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
