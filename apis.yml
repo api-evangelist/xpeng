@@ -6,6 +6,17 @@ description: 'XPENG (Xiaopeng Motors) is a Chinese smart electric-vehicle compan
   (9868). Surfaced as a portfolio company of hongshan and idg-capital. XPENG publishes no public
   developer API: its open platform (open.xiaopeng.com) is geo-restricted and account-gated, and
   no public API docs, specs, or SDKs were found.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
