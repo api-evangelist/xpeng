@@ -30,6 +30,9 @@ accessModel:
   method: derived
 image: https://a-cdn.xpeng.com/mall/public/favicon.svg
 url: https://raw.githubusercontent.com/api-evangelist/xpeng/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "XPENG publishes no public developer API: its open platform (open.xiaopeng.com) is geo-restricted and account-gated, and no public API docs, specs, or SDKs were found."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
